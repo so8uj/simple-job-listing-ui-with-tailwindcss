@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <!-- Add Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            margin: auto;
+            padding: 0px 15px
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <header class="fixed w-full bg-base-100 z-10">
+        <div class="container">
+
+
+            <div class="navbar relative p-0">
+                <div class="flex-1">
+                    <a href="index.html" class="btn btn-ghost text-xl">
+                        <img src="./assets/img/jobs-logo.webp" alt="JOBS LOGO" class="w-[100px]" />
+                    </a>
+                </div>
+                <div class="flex-none hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index.html" class="bg-yellow-500 hover:bg-yellow-200 text-black">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown lg:hidden static ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-green-100 rounded-box z-[1] mt-3 w-full p-2 left-0 shadow text-primary-content">
+                        <li><a href="index.html" class="bg-yellow-300 text-black">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Banner Area -->
+    <section class="banner bg-base-200 h-[500px] flex align-center">
+        <div class="container">
+            <div class="banner-wrapper text-center">
+                <h1 class="capitalize text-5xl font-bold mb-10">
+                    The best job listing site
+                </h1>
+                <div class="search-area flex gap-2 w-[90%] lg:w-[40%] mx-auto">
+                    <input type="text" placeholder="Search jobs..." class="input input-bordered w-full" />
+                    <button class="btn btn-warning">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Listing Area -->
+    <section class="jobs-area mt-[-100px]">
+        <div class="container">
+            <div class="jobs-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="job-box card bg-green-200 text-success-content w-full hover:-translate-y-2 duration-300 ease-in-out">
+                    <a href="#">
+                        <div class="card-body">
+                            <h2 class="card-title">PHP Developer</h2>
+                            <p>Deadline: 20 Feb, 2025</p>
+                            <div class="card-actions mt-1">
+                                <div class="badge bg-success text-success-content">Running</div>
+                                <div class="badge badge-outline">Full Time</div>
+                                <div class="badge badge-outline">On Site</div>
+                                <div class="badge badge-outline">Dhaka, Narayanganj</div>
+                                <div class="badge badge-outline">Flexible Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="job-box card bg-red-200 text-primary-content w-full hover:-translate-y-2 duration-300 ease-in-out">
+                    <a href="#">
+                        <div class="card-body">
+                            <h2 class="card-title">PHP Developer</h2>
+                            <p>Deadline: 3 Feb, 2025</p>
+                            <div class="card-actions mt-1">
+                                <div class="badge bg-error text-error-content">Finished</div>
+                                <div class="badge badge-outline">Full Time</div>
+                                <div class="badge badge-outline">On Site</div>
+                                <div class="badge badge-outline">Dhaka, Narayanganj</div>
+                                <div class="badge badge-outline">Flexible Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="job-box card bg-green-200 text-success-content w-full hover:-translate-y-2 duration-300 ease-in-out">
+                    <a href="#">
+                        <div class="card-body">
+                            <h2 class="card-title">PHP Developer</h2>
+                            <p>Deadline: 20 Feb, 2025</p>
+                            <div class="card-actions mt-1">
+                                <div class="badge bg-success text-success-content">Running</div>
+                                <div class="badge badge-outline">Full Time</div>
+                                <div class="badge badge-outline">On Site</div>
+                                <div class="badge badge-outline">Dhaka, Narayanganj</div>
+                                <div class="badge badge-outline">Flexible Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="job-box card bg-red-200 text-primary-content w-full hover:-translate-y-2 duration-300 ease-in-out">
+                    <a href="#">
+                        <div class="card-body">
+                            <h2 class="card-title">PHP Developer</h2>
+                            <p>Deadline: 3 Feb, 2025</p>
+                            <div class="card-actions mt-1">
+                                <div class="badge bg-error text-error-content">Finished</div>
+                                <div class="badge badge-outline">Full Time</div>
+                                <div class="badge badge-outline">On Site</div>
+                                <div class="badge badge-outline">Dhaka, Narayanganj</div>
+                                <div class="badge badge-outline">Flexible Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="job-box card bg-green-200 text-success-content w-full hover:-translate-y-2 duration-300 ease-in-out">
+                    <a href="#">
+                        <div class="card-body">
+                            <h2 class="card-title">PHP Developer</h2>
+                            <p>Deadline: 20 Feb, 2025</p>
+                            <div class="card-actions mt-1">
+                                <div class="badge bg-success text-success-content">Running</div>
+                                <div class="badge badge-outline">Full Time</div>
+                                <div class="badge badge-outline">On Site</div>
+                                <div class="badge badge-outline">Dhaka, Narayanganj</div>
+                                <div class="badge badge-outline">Flexible Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="job-box card bg-red-200 text-primary-content w-full hover:-translate-y-2 duration-300 ease-in-out">
+                    <a href="#">
+                        <div class="card-body">
+                            <h2 class="card-title">PHP Developer</h2>
+                            <p>Deadline: 3 Feb, 2025</p>
+                            <div class="card-actions mt-1">
+                                <div class="badge bg-error text-error-content">Finished</div>
+                                <div class="badge badge-outline">Full Time</div>
+                                <div class="badge badge-outline">On Site</div>
+                                <div class="badge badge-outline">Dhaka, Narayanganj</div>
+                                <div class="badge badge-outline">Flexible Office</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-warning font-semibold">View all job listings</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup and Registration Section -->
+    <section class="registration-section mt-[100px] py-20 bg-yellow-100">
+        <div class="container">
+            <div class="flex flex-col-reverse lg:flex-row gap-6 lg:gap-0 text-primary-content items-center">
+                <div class="w-full lg:w-1/2">
+                    <div class="flex items-center flex-col">
+                        <h3 class="text-6xl text-center leading-[1.3] font-bold">
+                            List Your <br />
+                            Jobs Now
+                        </h3>
+                        <div class="mt-7">
+                            <a href="#" class="btn btn-warning">Sign In</a>
+                            <a href="#" class="btn btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="./assets/img/job-listing-right-image.webp" class="w-3/4 lg:w-full mx-auto" alt="Job Listing Right Image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-center text-neutral-content py-20">
+        <div class="container">
+            <aside>
+                <img src="./assets/img/jobs-logo.webp" alt="Logo" class="w-[150px]" />
+            </aside>
+
+            <aside class="mt-8">
+                <p>
+                    Copyright © 2025 - All right reserved. Designed by
+                    <a class="link link-warning" target="_blank" href="https://facebook.com/so8uj">Sobuj</a>
+                </p>
+            </aside>
+        </div>
+    </footer>
+
+</body>
+
+</html>

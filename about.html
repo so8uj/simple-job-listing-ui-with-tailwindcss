@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <!-- Add Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            margin: auto;
+            padding: 0px 15px
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <header class="fixed w-full bg-base-100 z-10">
+        <div class="container">
+            <div class="navbar relative p-0">
+                <div class="flex-1">
+                    <a href="index.html" class="btn btn-ghost text-xl">
+                        <img src="./assets/img/jobs-logo.webp" alt="JOBS LOGO" class="w-[100px]" />
+                    </a>
+                </div>
+                <div class="flex-none hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html"  class="bg-yellow-500 hover:bg-yellow-200 text-black">About</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown lg:hidden static ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-green-100 rounded-box z-[1] mt-3 w-full p-2 left-0 shadow text-primary-content">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="bg-yellow-500 hover:bg-yellow-200 text-black">About</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Banner Area -->
+    <section class="about-banner bg-base-200 pt-[50px] lg:pt-3">
+        <div class="hero  min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="w-full md:w-2/3 lg:w-2/5 rounded-lg shadow-2xl p-5 text-center">
+                    <img src="./assets/img/developer-sobuj.webp" class="w-[80%] inline" />
+                </div>
+                <div class="w-full md:w-2/3 lg:w-3/5">
+                    <h1 class="text-5xl font-bold">Mohammad Sobuj</h1>
+                    <p class="py-6">Full Stack Web Developer</p>
+                    <h5 class="text-2xl font-bold mb-3">Technologies</h5>
+                    <ul class="flex gap-4 mb-5">
+                        <li class="shadow-2xl p-3 bg-yellow-100 rounded-lg">
+                            <img src="./assets/img/technologies/laravel.webp" width="40" />
+                        </li>
+                        <li class="shadow-2xl p-3 bg-yellow-100 rounded-lg">
+                            <img src="./assets/img/technologies/vue-js.webp" width="40" />
+                        </li>
+                        <li class="shadow-2xl p-3 bg-yellow-100 rounded-lg">
+                            <img src="./assets/img/technologies/php.webp" width="40" />
+                        </li>
+                        <li class="shadow-2xl p-3 bg-yellow-100 rounded-lg">
+                            <img src="./assets/img/technologies/javascript.webp" width="40" />
+                        </li>
+                        <li class="shadow-2xl p-3 bg-yellow-100 rounded-lg">
+                            <img src="./assets/img/technologies/mysql.webp" width="40" />
+                        </li>
+                    </ul>
+                    <div class="flex gap-3">
+                        <a href="https://www.facebook.com/so8uj" target="_blank" class="btn btn-primary">Facebook</a>
+                        <a href="https://www.linkedin.com/in/so8uj-/" target="_blank" class="btn btn-primary">Linkedin</a>
+                        <a href="https://github.com/so8uj" target="_blank" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer-center text-neutral-content py-20">
+        <div class="container">
+            <aside>
+                <img src="./assets/img/jobs-logo.webp" alt="Logo" class="w-[150px]" />
+            </aside>
+
+            <aside class="mt-8">
+                <p>
+                    Copyright © 2025 - All right reserved. Designed by
+                    <a class="link link-warning" target="_blank" href="https://facebook.com/so8uj">Sobuj</a>
+                </p>
+            </aside>
+        </div>
+    </footer>
+
+</body>
+
+</html>
