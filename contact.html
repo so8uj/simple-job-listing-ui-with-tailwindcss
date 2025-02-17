@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Project</title>
+    <title>Tailwind Project - Contact Me</title>
     <!-- Add Font Family -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
@@ -26,13 +26,15 @@
     <!-- Header Navbar -->
     <header class="fixed w-full bg-base-100 z-10">
         <div class="container">
-            <div class="navbar relative p-0">
-                <div class="flex-1">
+            <div class="navbar relative">
+                
+                <div class="navbar-start">
                     <a href="index.html" class="btn btn-ghost text-xl">
                         <img src="./assets/img/jobs-logo.webp" alt="JOBS LOGO" class="w-[100px]" />
                     </a>
                 </div>
-                <div class="flex-none hidden lg:flex">
+                
+                <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -41,30 +43,34 @@
                     </ul>
                 </div>
 
-                <div class="dropdown lg:hidden static ">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                <div class="navbar-end">
+                    <div class="d-flex gap-x-2">
+                        <a href="signin.html" class="btn btn-warning btn-sm font-normal">Sign In</a>
+                        <a href="signup.html" class="btn btn-warning btn-sm font-normal btn-outline">Sign Up</a>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-green-100 rounded-box z-[1] mt-3 w-full p-2 left-0 shadow text-primary-content">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="jobs.html">Jobs</a></li>
-                        <li><a href="contact.html" class="bg-yellow-500 hover:bg-yellow-200 text-black">Contact</a></li>
-                    </ul>
+                    <div class="dropdown lg:hidden static ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-green-100 rounded-box z-[1] mt-3 w-full p-2 left-0 shadow text-primary-content">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="contact.html" class="bg-yellow-300 text-black">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-
+                
             </div>
-
         </div>
     </header>
 
     <!-- Banner Area -->
-    <section class="about-banner py-[100px] bg-base-200">
+    <section class="about-banner pt-[140px] pb-[100px] bg-base-200">
         <div class="container">
             <div class="contactus-wrapper flex">
                 <div class="w-1/2 mx-auto text-center">
